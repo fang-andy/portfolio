@@ -53,7 +53,7 @@ const Page = () => {
           About Me
         </Heading>
         <p>Andy is a software engineer born and raised in San Francisco.
-          He is currently working at LinkedIn as a Deal Desk Associate, but is pivoting into software development.
+          He is currently working at LinkedIn as a Deal Desk Associate, but is in pursuit of software developement opportunities.
           He has a background in JavaScript, with extensive experience with React for the front-end, and
           Node/Express/Postgres/MongoDB for the back-end.</p>
       </Section>
