@@ -1,10 +1,25 @@
-import { Container, Heading, Box, Image } from '@chakra-ui/react'
+import {
+  Container,
+  Heading,
+  Box,
+  Image,
+  useColorModeValue
+} from '@chakra-ui/react'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
     <Container>
-      <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
-        Hello, I am a full-stack developer based in San Francisco!
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        p={3}
+        mb={6}
+        align="center"
+      >
+        Hello, I am a software engineer based in San Francisco!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -12,7 +27,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Andy Fang
           </Heading>
-          <p> Aspiring Engineer ( Coffee Connoisseur / Developer / Traveler )</p>
+          <p> Software Engineer </p>
         </Box>
         <Box
           flexShrink={0}
@@ -32,6 +47,47 @@ const Page = () => {
           />
         </Box>
       </Box>
+
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          About Me
+        </Heading>
+        <p>Andy is a software engineer born and raised in San Francisco.
+          He is currently working at LinkedIn as a Deal Desk Associate, but is pivoting into software development.
+          He has a background in JavaScript, with extensive experience with React for the front-end, and
+          Node/Express/Postgres/MongoDB for the back-end.</p>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Professional Experience
+        </Heading>
+        <BioSection>
+          <BioYear>2016</BioYear>
+          Investment Analyst at Marcus & Millichap, a Commercial Real Estate Firm
+        </BioSection>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          Credit Specialist at First Republic Bank
+        </BioSection>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          Deal Desk Associate at LinkedIn
+        </BioSection>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Education
+        </Heading>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Hack Reactor Advanced Software Engineering Immersive Program
+        </BioSection>
+        <BioSection>
+          <BioYear>2016</BioYear>
+          University of California, Irvine - Business Economics
+        </BioSection>
+      </Section>
     </Container>
   )
 }
