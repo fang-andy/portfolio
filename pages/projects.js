@@ -5,7 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 const Projects = () => {
   return (
-    <Container>
+    <Container maxW="100%">
       <Heading as="h3" fontsize={20} mb={4}>
         Projects
       </Heading>

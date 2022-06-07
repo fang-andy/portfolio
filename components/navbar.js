@@ -12,10 +12,11 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  ButtonGroup
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import ThemeToggleButton from './theme-toggle-button.js';
+import { ThemeToggleButton, ResumeButton } from './theme-toggle-button.js';
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -78,31 +79,34 @@ const Navbar = (props) => {
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
-          <Box ml={1} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <MenuItem as={Link} href="">
-                  View Source
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Box>
+          <ButtonGroup spacing="1">
+            <ResumeButton />
+            <ThemeToggleButton />
+            <Box display={{ base: 'inline-block', md: 'none' }}>
+              <Menu>
+                <MenuButton
+                  as={IconButton}
+                  icon={<HamburgerIcon />}
+                  variant="outline"
+                  aria-label="Options"
+                />
+                <MenuList>
+                  <NextLink href="/" passHref>
+                    <MenuItem as={Link}>About</MenuItem>
+                  </NextLink>
+                  <NextLink href="/projects" passHref>
+                    <MenuItem as={Link}>Projects</MenuItem>
+                  </NextLink>
+                  <NextLink href="/posts" passHref>
+                    <MenuItem as={Link}>Posts</MenuItem>
+                  </NextLink>
+                  <MenuItem as={Link} href="">
+                    View Source
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
+          </ButtonGroup>
         </Box>
       </Container>
     </Box>

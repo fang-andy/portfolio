@@ -11,7 +11,7 @@ import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
-    <Container>
+    <Container maxW="100%">
       <Box
         borderRadius="lg"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -19,7 +19,7 @@ const Page = () => {
         mb={6}
         align="center"
       >
-        Hello, I am a software engineer based in San Francisco!
+        Hello, I am a software engineer based in San Francisco, California!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -27,7 +27,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Andy Fang
           </Heading>
-          <p> Software Engineer </p>
+          <p> Software Engineer | Traveler | Coffee Connoisseur </p>
         </Box>
         <Box
           flexShrink={0}
