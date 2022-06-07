@@ -31,7 +31,7 @@ const Page = () => {
         </Box>
         <Box
           flexShrink={0}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 5, md: 0 }}
           ml={{ md: 6 }}
           align="center"
         >
@@ -63,16 +63,16 @@ const Page = () => {
           Professional Experience
         </Heading>
         <BioSection>
-          <BioYear>2016</BioYear>
-          Investment Analyst at Marcus & Millichap, a Commercial Real Estate Firm
+          <BioYear>2018</BioYear>
+          Deal Desk Associate at LinkedIn
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
           Credit Specialist at First Republic Bank
         </BioSection>
         <BioSection>
-          <BioYear>2018</BioYear>
-          Deal Desk Associate at LinkedIn
+          <BioYear>2016</BioYear>
+          Investment Analyst at Marcus & Millichap, a Commercial Real Estate Firm
         </BioSection>
       </Section>
       <Section delay={0.2}>
