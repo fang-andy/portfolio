@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Andy's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fang-andy/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Andy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fang-andy/portfolio/issues"
+  },
+  "homepage": "https://github.com/fang-andy/portfolio#readme"
+}
