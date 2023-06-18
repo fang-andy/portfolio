@@ -1,27 +1,38 @@
-import React from 'react';
-
-import {
-    About,
-    Banner,
-    Contact,
-    Header,
-    Nav,
-    Services,
-    Work
-} from './components';
+import { useState, useEffect } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
+import { Navbar, DotGroup } from "./scenes";
 
 const App = () => {
-    return (
-        <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
-            <Header />
-            <Banner />
-            <Nav />
-            <About />
-            <Services />
-            <Work />
-            <Contact />
-        </div>
-    )
-}
+  const [selectedPage, setSelectedPage] = useState("home");
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
-export default App
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) setIsTopOfPage(true);
+      if (window.scrollY !== 0) setIsTopOfPage(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div className="app bg-deep-blue">
+      <Navbar
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
+      <div className="w-5/6 mx-auto md:h-full">
+        {isAboveMediumScreens && (
+          <DotGroup
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default App;
