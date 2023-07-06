@@ -38,6 +38,7 @@ const Landing = ({ setSelectedPage }) => {
 
       {/* MAIN SECTION */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
+        
         {/* HEADINGS */}
         <motion.div
           initial="hidden"

@@ -1,15 +1,5 @@
-import About from './About';
-import Banner from './Banner';
-import Contact from './Contact';
-import Header from './Header';
-import Services from './Services';
-import Work from './Work';
+import LineGradient from "./LineGradient";
+import SocialMediaIcons from "./SocialMediaIcons";
 
-export {
-    About,
-    Banner,
-    Contact,
-    Header,
-    Services,
-    Work
-}
+
+export { LineGradient, SocialMediaIcons };

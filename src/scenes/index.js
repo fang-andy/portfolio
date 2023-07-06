@@ -1,5 +1,6 @@
 import DotGroup from "./DotGroup";
-import Navbar from "./Navbar";
 import Landing from "./Landing";
+import MySkills from "./MySkills";
+import Navbar from "./Navbar";
 
-export { DotGroup, Navbar, Landing };
+export { DotGroup, Landing, MySkills, Navbar };
