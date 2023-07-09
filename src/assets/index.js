@@ -6,6 +6,7 @@ import MenuIcon from "./menu-icon.svg";
 import ProfilePic from "./pic2.png";
 import SkillsImage from "./skills-image.png";
 
+
 export {
   CloseIcon,
   Github,
