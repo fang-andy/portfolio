@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
-import { Navbar, DotGroup, Landing, MySkills, Projects, Contact } from "./scenes";
+import {
+  Navbar,
+  DotGroup,
+  Landing,
+  MySkills,
+  Projects,
+  Contact,
+  Footer,
+} from "./scenes";
 import LineGradient from "./components/LineGradient";
 
 const App = () => {
@@ -41,8 +49,11 @@ const App = () => {
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
-      <div className='w-5/6 mx-auto'>
+      <div className="w-5/6 mx-auto">
         <Contact />
+      </div>
+      <div className="w-5/6 mx-auto">
+        <Footer />
       </div>
     </div>
   );
