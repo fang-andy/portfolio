@@ -41,6 +41,9 @@ const App = () => {
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
+      <div className='w-5/6 mx-auto'>
+        <Contact />
+      </div>
     </div>
   );
 };
