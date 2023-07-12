@@ -16,13 +16,13 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveMediumScreens ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 
-              before:rounded-t-[400px] before:w-full before:max-w-[400px] md:before:max-w-[600px] 
+            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
+              before:rounded-t-[400px] before:w-full before:max-w-[400px] md:before:max-w-[600px]
               before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-300 transition duration-500 z-10 w-full 
+              className="hover:filter hover:saturate-300 transition duration-500 z-10 w-full
                 max-w-[400px] md:max-w-[600px]"
               src={ProfilePic}
             />
@@ -38,7 +38,7 @@ const Landing = ({ setSelectedPage }) => {
 
       {/* MAIN SECTION */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
-        
+
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -53,8 +53,8 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Andy{" "}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 
-                xs:before:content-brush before:absolute before:-left-[25px] 
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20
+                xs:before:content-brush before:absolute before:-left-[25px]
                 before:-top-[70px] before:z-[-1]"
             >
               Fang
@@ -78,7 +78,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold 
+            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
@@ -91,7 +91,7 @@ const Landing = ({ setSelectedPage }) => {
             href="#contact"
           >
             <div
-              className="bg-deep-blue hover:text-red transition duration-500 
+              className="bg-deep-blue hover:text-red transition duration-500
               w-full h-full flex items-center justify-center font-playfair px-10"
             >
               Let's talk.

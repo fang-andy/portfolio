@@ -23,7 +23,7 @@ const Project = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p classname="mt-7">This is just random text</p>
+        <p className="mt-7">This is just random text</p>
       </div>
       <img src={require(`../assets/${projectTitle}.jpeg`)} alt={projectTitle} />
 
